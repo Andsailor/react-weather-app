@@ -1,0 +1,105 @@
+@import "../../../styles/vars.scss";
+
+.single-day {
+    &-day {
+        font-size: 30px;
+        text-align: center;
+        color: $main-color;
+        font-weight: 500;
+    }
+
+    &-icon {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 30px auto;
+    }
+
+    &-temperature {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 500;
+        color: #343A40;
+    }
+
+    &-text {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &-date {
+        text-align: center;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    hr {
+        width: 150px
+    }
+}
+
+@media (max-width: 1200px) {
+    .single-day {
+        &-day {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .single-day {
+        &-temperature {
+            font-size: 30px;
+        }
+
+        &-text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .single-day {
+        &-day {
+            font-size: 33px;
+        }
+
+        &-icon {
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+        }
+
+        &-temperature {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .single-day {
+        &-day {
+            font-size: 30px;
+        }
+
+        &-icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        &-temperature {
+            font-size: 40px;
+        }
+
+        &-text {
+            font-size: 15px;
+        }
+    }
+}

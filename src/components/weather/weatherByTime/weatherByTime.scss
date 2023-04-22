@@ -1,0 +1,47 @@
+@import "../../../styles/vars.scss";
+
+.weather-card {
+
+    &-time {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: $main-color;
+        font-weight: 500;
+    }
+
+    &-image {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+
+    }
+
+    &-temperature {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #343A40;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .weather-card {
+        &-time {
+            font-size: 25px;
+        }
+
+        &-image {
+            margin-top: 0;
+        }
+
+        &-temperature {
+            font-size: 25px;
+            margin-top: 0;
+        }
+    }
+}

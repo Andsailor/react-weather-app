@@ -1,0 +1,66 @@
+@import "../../styles/vars.scss";
+
+.conditions {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 0 134px;
+    align-items: center;
+    min-height: 178px;
+    background-color: $background-color;
+
+    &-info {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $main-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .conditions {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .conditions {
+        padding: 0 10px;
+        column-gap: 5px;
+
+        &-info {
+            font-size: 17px;
+
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .conditions {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-template-columns: repeat(1, auto);
+        row-gap: 30px;
+
+        &-info {
+            font-size: 30px;
+
+            span {
+                font-size: 25px;
+            }
+        }
+    }
+}

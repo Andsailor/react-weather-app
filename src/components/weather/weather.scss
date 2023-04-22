@@ -1,0 +1,120 @@
+@import "../../styles/vars.scss";
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 405px;
+    padding: 0 105px;
+    background-color: #fff;
+
+    &-location {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: $main-color;
+        font-weight: 500;
+    }
+
+    &-day {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: rgba(52, 58, 64, 0.9);
+    }
+
+    &-temperature {
+        text-align: start;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 96px;
+        line-height: 112px;
+        color: #343A40;
+
+    }
+
+    &-future {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 163px;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+@media (max-width: 1400px) {
+    .weather {
+        justify-content: space-around;
+
+        &-location {
+            font-size: 30px;
+        }
+
+        &-future {
+            column-gap: 100px
+        }
+
+        &-temperature {
+            font-size: 80px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .weather {
+        padding: 0 50px;
+
+        &-temperature {
+            font-size: 70px;
+        }
+
+        &-future {
+            column-gap: 70px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .weather {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+
+        &-location {
+            text-align: center;
+        }
+
+        &-day {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &-temperature {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .weather {
+        &-future {
+            column-gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .weather {
+        padding: 20px 20px;
+
+        &-future {
+            grid-template-columns: repeat(2, auto);
+            column-gap: 100px;
+            row-gap: 20px;
+        }
+    }
+}
