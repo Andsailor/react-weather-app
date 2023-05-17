@@ -14,7 +14,7 @@ const DailyWeather = ({ weatherLocation }) => {
     const { getWeather, loading, setLoading, error } = weatherAPI()
 
     useEffect(() => {
-        updateWeather(weatherLocation, 5)
+        updateWeather(weatherLocation, 3)
     }, [weatherLocation])
 
     const updateWeather = (location, days) => {
